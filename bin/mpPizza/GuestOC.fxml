@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="GOCpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1400.0" style="-fx-background-color: #0A001E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mpPizza.GOController">
+   <children>
+      <VBox prefHeight="149.0" prefWidth="1400.0">
+         <children>
+            <HBox prefHeight="81.0" prefWidth="1401.0" style="-fx-background-color: #CC0B0B;">
+               <children>
+                  <Button fx:id="Back" mnemonicParsing="false" onAction="#goBack" prefHeight="81.0" prefWidth="93.0" style="-fx-background-color: transparent;" styleClass="backb" stylesheets="@application.css" text="&lt;" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="43.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MOM &amp; POPS PIZZA RESTAURANT" textAlignment="CENTER">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="330.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView fitHeight="81.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/Kennesaw%20State%20University/2nd%20Semester/Introduction%20to%20Software%20Engineering/M&amp;P%20logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="275.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="895.0" style="-fx-background-color: #7D0606; -fx-border-color: #ffffff;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="client" fill="WHITE" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guest" wrappingWidth="350.0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Button fx:id="B_logout" mnemonicParsing="false" onAction="#exitProgram" prefHeight="63.0" prefWidth="179.0" style="-fx-border-color: #ffffff;" styleClass="orangeb" stylesheets="@application.css" text="Logout" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="33.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets right="500.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="901.0" layoutY="82.0" prefHeight="743.0" prefWidth="498.0" style="-fx-background-color: #070014; -fx-border-color: #ffffff;">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="87.0" prefWidth="391.0" style="-fx-background-color: #CC0B0B; -fx-border-color: #ffffff;">
+               <VBox.margin>
+                  <Insets left="55.0" right="50.0" top="80.0" />
+               </VBox.margin>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Order" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="23.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <ListView fx:id="L_forder" prefHeight="316.0" prefWidth="442.0" styleClass="list-cell" stylesheets="@application.css">
+               <VBox.margin>
+                  <Insets left="30.0" right="25.0" top="30.0" />
+               </VBox.margin>
+            </ListView>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox prefHeight="37.0" prefWidth="496.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Total: $">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="ftotal" fill="WHITE" layoutX="30.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="140.9056396484375">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="B_Confirm" mnemonicParsing="false" onAction="#confirm" prefHeight="62.0" prefWidth="240.0" style="-fx-border-color: #ffffff;" styleClass="greenb" stylesheets="@application.css" text="Confirm" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="128.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+      <Pane layoutY="824.0" prefHeight="26.0" prefWidth="1400.0" style="-fx-background-color: #CC0B0B;" />
+      <VBox layoutX="12.0" layoutY="156.0" prefHeight="675.0" prefWidth="897.0">
+         <children>
+            <HBox prefHeight="87.0" prefWidth="391.0" style="-fx-background-color: #CC0B0B; -fx-border-color: #ffffff;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Confirmation" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="43.0" top="23.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="250.0" right="250.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="37.0" prefWidth="897.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="We might need these information:">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="479.0" prefWidth="897.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="386.0" prefWidth="448.0">
+                     <children>
+                        <VBox fx:id="hbcardname" prefHeight="100.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cardholder Name:">
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="70.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TextField fx:id="TF_cardname" prefHeight="48.0" prefWidth="496.0" styleClass="textfield" stylesheets="@application.css">
+                                 <VBox.margin>
+                                    <Insets left="70.0" right="70.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="hbcardnumber" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Number:">
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="70.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TextField fx:id="TF_cardnumber" prefHeight="48.0" prefWidth="496.0" styleClass="textfield" stylesheets="@application.css">
+                                 <VBox.margin>
+                                    <Insets left="70.0" right="70.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox fx:id="hbaddress" layoutX="10.0" layoutY="110.0" prefHeight="264.0" prefWidth="448.0">
+                           <children>
+                              <HBox fx:id="hbcarddetails" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="91.0" prefWidth="83.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV:">
+                                             <font>
+                                                <Font name="Microsoft Sans Serif" size="24.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Text>
+                                          <PasswordField fx:id="TF_securitycode" prefHeight="53.0" prefWidth="79.0" styleClass="textfield" stylesheets="@application.css">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </PasswordField>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <ComboBox fx:id="CB_cardtype" prefHeight="51.0" prefWidth="284.0" promptText="Card Type" style="-fx-background-color: #0A001E; -fx-border-color: #ffffff;" styleClass="combo-box" stylesheets="@application.css">
+                                       <HBox.margin>
+                                          <Insets left="20.0" top="50.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="65.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <VBox fx:id="hbdate" prefHeight="100.0" prefWidth="496.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration Date:">
+                                       <font>
+                                          <Font name="Microsoft Sans Serif" size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="70.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <DatePicker fx:id="Datepicker" editable="false" prefHeight="43.0" prefWidth="238.0" styleClass="datepicker" stylesheets="@application.css">
+                                       <VBox.margin>
+                                          <Insets left="35.0" top="10.0" />
+                                       </VBox.margin>
+                                    </DatePicker>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="70.0" top="30.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="386.0" prefWidth="448.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Logistic:">
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="28.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <VBox prefHeight="108.0" prefWidth="227.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <RadioButton fx:id="R_delivery" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" styleClass="radio" stylesheets="@application.css" text="Delivery" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft Sans Serif" size="26.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="Logistic" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="R_pickup" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" styleClass="radio" stylesheets="@application.css" text="Pickup" textAlignment="CENTER" textFill="WHITE" toggleGroup="$Logistic">
+                                       <font>
+                                          <Font name="Microsoft Sans Serif" size="26.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </RadioButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <ComboBox fx:id="CB_payment" onAction="#setVisual" prefHeight="47.0" prefWidth="252.0" promptText="Select Method" style="-fx-background-color: #0A001E; -fx-border-color: #ffffff;" styleClass="combo-box" stylesheets="@application.css">
+                           <VBox.margin>
+                              <Insets left="100.0" top="30.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="70.0" top="30.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField fx:id="TF_address" prefHeight="78.0" prefWidth="308.0" styleClass="textfield" stylesheets="@application.css">
+                           <VBox.margin>
+                              <Insets left="70.0" right="70.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,390 @@
+.myDialog{
+    -fx-background-color: #0A001E;
+}
+.myDialog > *.button-bar > *.container{
+    -fx-background-color:  #0A001E;
+}
+.myDialog > *.label.content{
+	-fx-text-fill:#ffffff;
+    -fx-font-size: 18px;
+}
+.myDialog:header *.header-panel{
+    -fx-background-color: #CC0B0B;
+}
+.myDialog:header *.header-panel *.label{
+	-fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+}
+.myDialog .button{
+   -fx-background-color:#01335F;
+   -fx-text-fill:#ffffff;
+   -fx-wrap-text: true;
+   -fx-cursor:hand;
+    -fx-border-width: 1px;
+  -fx-border-color: #ffffff;
+ }
+
+.myDialog .button:hover{     
+  -fx-background-color:#00708a;
+  -fx-text-fill:#ffffff;
+  -fx-effect: dropshadow( three-pass-box, #ffffff, 3.0, 0.0, 0.0, 0.0);
+  -fx-font-weight:bold; 
+ }
+    
+#redb {
+    -fx-background-color:#CC0B0B;
+   -fx-text-fill:#ffffff;
+   -fx-wrap-text: true;
+   -fx-cursor:hand;
+   -fx-padding: 5;
+    }
+ 
+
+
+#redb:hover{     
+  -fx-background-color:#f00a0a;
+  -fx-text-fill:#ffffff;
+  -fx-effect: dropshadow( three-pass-box, #ffffff, 3.0, 0.0, 0.0, 0.0); 
+ }
+ 
+#redb:pressed{
+	-fx-background-color:#ffffff;
+   -fx-text-fill:#ffffff;
+}
+    
+.orangeb {
+    -fx-background-color:#C53B00;
+   -fx-text-fill:#ffffff;
+   -fx-wrap-text: true;
+   -fx-cursor:hand;
+    }
+ 
+
+
+.orangeb:hover{     
+  -fx-background-color:#ff4c00;
+  -fx-text-fill:#ffffff;
+  -fx-effect: dropshadow( three-pass-box, #ffffff, 3.0, 0.0, 0.0, 0.0); 
+ }
+ 
+.orangeb:pressed{
+	-fx-background-color:#ffffff;
+   -fx-text-fill:#ffffff;
+}
+
+.blueb {
+    -fx-background-color:#01335F;
+   -fx-text-fill:#ffffff;
+   -fx-wrap-text: true;
+   -fx-cursor:hand; 
+    }
+ 
+.blueb:hover{     
+  -fx-background-color: #00708a;
+  -fx-text-fill:#ffffff;
+  -fx-effect: dropshadow( three-pass-box, #ffffff, 3.0, 0.0, 0.0, 0.0); 
+ }
+ 
+.blueb:pressed{
+	-fx-background-color:#ffffff;
+   -fx-text-fill:#ffffff;
+}
+
+.greenb {
+    -fx-background-color:#007D08;
+   -fx-text-fill:#ffffff;
+   -fx-wrap-text: true;
+   -fx-cursor:hand;
+    }
+
+.greenb:hover{     
+  -fx-background-color:#00bf0c;
+  -fx-text-fill:#ffffff;
+  -fx-effect: dropshadow( three-pass-box, #ffffff, 3.0, 0.0, 0.0, 0.0); 
+ }
+ 
+.greenb:pressed{
+	-fx-background-color:#ffffff;
+   -fx-text-fill:#ffffff;
+}
+
+.backb {
+    -fx-background-color:transparent;
+   -fx-text-fill:#ffffff;
+   -fx-wrap-text: true;
+   -fx-cursor:hand;
+    }
+
+.backb:hover{     
+  -fx-background-color: rgb(0, 0, 0, 0.2);
+  -fx-text-fill:#ffffff;
+  -fx-border-width: 1px;
+  -fx-border-color: #ffffff;
+  -fx-effect: dropshadow( three-pass-box, #ffffff, 3.0, 0.0, 0.0, 0.0); 
+ }
+ 
+.backb:pressed{
+	-fx-background-color:#ffffff;
+   -fx-text-fill:#ffffff;
+}
+
+.toggleb {
+    -fx-background-color:transparent;
+   -fx-text-fill:#ffffff;
+   -fx-wrap-text: true;
+   -fx-cursor:hand;
+    }
+
+.toggleb:hover{     
+  -fx-background-color: rgb(0, 0, 0, 0.2);
+  -fx-text-fill:#ffffff;
+  -fx-effect: dropshadow( three-pass-box, #ffffff, 3.0, 0.0, 0.0, 0.0); 
+ }
+ 
+.toggleb:selected{
+	-fx-background-color:#CC0B0B;
+   -fx-text-fill:#ffffff;
+}
+
+.toggleb:pressed{
+	-fx-background-color:#ffffff;
+}
+
+.radio {
+    -fx-border-width: 1px;
+    -fx-border-color: #ffffff;
+    -fx-background-color: transparent;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+    -fx-cursor:hand;
+}
+
+.radio:selected {
+    -fx-background-color: #CC0B0B;
+    -fx-background-radius: 15px;
+    -fx-padding: 5px;
+}
+
+.radio:armed {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-padding: 5px;
+}
+
+.radio:determinate {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-padding: 5px;
+}
+
+
+.radio .dot {
+	-fx-mark-highlight-color: white ;
+  -fx-mark-color: white ;
+    -fx-background-radius: 15px;
+    -fx-padding: 8px;
+}
+
+.checkbox .box {
+ -fx-cursor:hand;
+-fx-background-color: transparent;
+-fx-border-color:white;
+-fx-border-radius:3px; 
+-fx-padding: 3px;
+}
+
+.checkbox:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.checkbox:selected .box {
+
+-fx-background-color: #CC0B0B;
+}
+
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell, .combo-box-base {
+    -fx-background-color: black ;
+    -fx-text-fill: white ;
+    -fx-text-base-color: white;
+    -fx-font-size: 24px;
+    -fx-font-family: "Microsoft Sans Serif" ;
+    -fx-cursor:hand;
+}
+
+.combo-box .combo-box-popup .list-cell:hover {
+    -fx-text-fill: white ;
+    -fx-background-color: #CC0B0B ;
+}
+
+.textfield {
+    -fx-background-color: #070014;
+    -fx-border-color: #ffffff;
+    -fx-text-fill: white ;
+    -fx-font-size: 24px;
+    -fx-cursor:text;
+}
+.textfield:focused {
+    
+    -fx-border-color: #0091ff;
+    
+}
+
+.link {
+    -fx-background-color:transparent;
+   -fx-text-fill:#0091ff;
+   -fx-wrap-text: true;
+   -fx-cursor:hand;
+   -fx-font-size: 24px;
+    }
+
+.link:hover{     
+  
+  -fx-border-color: #ffffff;
+  
+ }
+ 
+.link:pressed{
+	-fx-background-color:#ffffff;
+   -fx-text-fill:#0091ff;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    
+   -fx-border-color: #0091ff;
+}
+
+.list-cell {
+    -fx-background-color:  #070014;
+}
+
+
+.list-cell:filled:hover {
+    -fx-background-color:#1f1f1f;
+}
+
+#list-text {
+    -fx-font: 26px MicrosoftSansSerif;
+    -fx-fill: #ffffff;
+    
+}
+
+#list-text2 {
+    -fx-font: 22px MicrosoftSansSerif;
+    -fx-fill: #ffffff;
+    
+}
+
+
+.list-cell .scroll-bar:horizontal ,
+.list-cell  .scroll-bar:vertical{
+    -fx-background-color:transparent;
+ 
+}
+ 
+
+.list-cell .increment-button ,.list-cell .decrement-button {
+    -fx-background-color:transparent;
+	-fx-border-color:derive(gray,80%);
+}
+ 
+
+.list-cell .scroll-bar:horizontal .track ,
+.list-cell .scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+	 -fx-border-color:derive(gray,80%);
+	 -fx-background-radius: 5em;
+}
+ 
+
+.list-cell .scroll-bar:horizontal .thumb,
+.list-cell .scroll-bar:vertical .thumb {
+    -fx-background-color:#9c9c9c;
+	-fx-background-radius: 5em;
+ 
+}
+ 
+ 
+.list-cell .scroll-bar:horizontal:hover .track ,
+.list-cell .scroll-bar:horizontal:pressed .track ,
+.list-cell .scroll-bar:vertical:hover .track,
+.list-cell .scroll-bar:vertical:pressed .track{
+     -fx-background-color: black;
+	 -fx-background-radius: 5em;
+ 
+}
+ 
+
+.list-cell .scroll-bar .thumb:hover,
+.list-cell .scroll-bar .thumb:pressed{
+    -fx-background-color: derive(black,50%);
+}
+ 
+.list-cell .increment-button:hover ,.list-cell .decrement-button:hover {
+    -fx-background-color:derive(gray,100%);
+	-fx-border-color:derive(gray,80%);	
+	-fx-padding:5px;
+}
+
+
+.datepicker {
+	
+	-fx-base: #070014;
+	-fx-font: 22px MicrosoftSansSerif;
+    -fx-fill: #ffffff;
+	
+}
+
+.date-picker-popup > * > .day-cell:hover {
+    -fx-background-color: #CC0B0B;
+    -fx-font: 22px MicrosoftSansSerif;
+    -fx-fill: #ffffff;
+    
+}
+
+.date-picker-popup > * > .day-cell > .secondary-text {
+	 -fx-background-color: #070014;
+   -fx-font: 22px MicrosoftSansSerif;
+    -fx-fill: #ffffff;
+}
+
+.date-picker-popup > * > .day-cell {
+    -fx-text-fill: white;
+     -fx-background-color: #070014;
+    -fx-border-color: lightgray;
+    -fx-border-width: 1;
+    -fx-border-insets: 0;
+}
+
+.date-picker-popup > * > .day-name-cell {
+    -fx-background-color: #CC0B0B;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .left-button {
+    -fx-padding: 4 6;
+    -fx-background-color: #070014;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .right-button {
+    -fx-padding: 4 6;
+    -fx-background-color: #070014;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .button > .left-arrow {
+    -fx-background-color: red;
+    -fx-background-insets: 0;
+    -fx-padding: 0.333em 0.167em 0.333em 0.167em;
+    -fx-shape: "M5.997,5.072L5.995,6.501l-2.998-4l2.998-4l0.002,1.43l-1.976,2.57L5.997,5.072z";
+    -fx-scale-shape: true;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .button > .right-arrow {
+    -fx-background-color: red;
+    -fx-background-insets: 0;
+    -fx-padding: 0.333em 0.167em 0.333em 0.167em;
+    -fx-shape: "M2.998-0.07L3-1.499l2.998,4L3,6.501l-0.002-1.43l1.976-2.57L2.998-0.07z";
+    -fx-scale-shape: true;
+}

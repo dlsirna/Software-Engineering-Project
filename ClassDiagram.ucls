@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="false" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="mpPizza.LoginController" project="MPrestaurant" 
+    file="/MPrestaurant/src/mpPizza/LoginController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="268" width="221" x="251" y="153"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="mpPizza.RegistrationController" project="MPrestaurant" 
+    file="/MPrestaurant/src/mpPizza/RegistrationController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="322" width="203" x="512" y="153"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="mpPizza.BTmenuController" project="MPrestaurant" 
+    file="/MPrestaurant/src/mpPizza/BTmenuController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="430" width="223" x="755" y="153"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="mpPizza.AccountController" project="MPrestaurant" 
+    file="/MPrestaurant/src/mpPizza/AccountController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="376" width="203" x="1018" y="153"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="mpPizza.DSmenuController" project="MPrestaurant" 
+    file="/MPrestaurant/src/mpPizza/DSmenuController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="520" width="223" x="1261" y="153"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="mpPizza.OController" project="MPrestaurant" 
+    file="/MPrestaurant/src/mpPizza/OController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="322" width="195" x="1524" y="153"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="mpPizza.SampleController" project="MPrestaurant" 
+    file="/MPrestaurant/src/mpPizza/SampleController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="214" width="194" x="1759" y="153"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="mpPizza.Main" project="MPrestaurant" file="/MPrestaurant/src/mpPizza/Main.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="122" x="1993" y="153"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
