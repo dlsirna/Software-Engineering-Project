@@ -1,2 +1,2 @@
 # Software Engineering Project
- application built attempting to follow MVC
+Pizza shop GUI application built following MVC for an into to software engineering course
